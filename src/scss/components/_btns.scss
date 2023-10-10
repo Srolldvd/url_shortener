@@ -1,0 +1,35 @@
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 2rem;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  transition: background-color 250ms ease-out;
+  cursor: pointer;
+
+  &--sm {
+    width: fit-content;
+  }
+
+  &--rounded {
+    border-radius: 20px;
+  }
+
+  &--light {
+    background-color: $primary-clr-light;
+
+    &:hover {
+      background-color: darken($primary-clr-light, 10%);
+    }
+  }
+
+  &--dark {
+    background-color: $primary-clr-dark;
+    &:hover {
+      background-color: lighten($primary-clr-dark, 10%);
+    }
+  }
+}
