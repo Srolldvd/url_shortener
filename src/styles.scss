@@ -3,3 +3,122 @@
 @import "./scss/core";
 @import "./scss/typography";
 @import "./scss/components/index";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+
+  &__wrapper {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    max-height: 2.5rem;
+  }
+
+  &__hamburger {
+    position: relative;
+    width: 30px;
+
+    &__bar,
+    &__bar:before,
+    &__bar:after {
+      display: block;
+      background-color: $neutral-clr-light;
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      border-radius: 2px;
+    }
+
+    &__bar:before {
+      content: "";
+      margin-top: -8px;
+    }
+
+    &__bar:after {
+      content: "";
+      margin-top: 8px;
+    }
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    top: 6rem;
+    left: 1rem;
+    right: 1rem;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background-color: $primary-clr-dark;
+    border-radius: 10px;
+
+    &__item {
+      display: inline-block;
+      width: 100%;
+      padding: 1rem 0.25rem;
+      color: #fff;
+
+      &--separated {
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0rem;
+          right: 0rem;
+          height: 1px;
+          background-color: $neutral-clr;
+          opacity: 50%;
+        }
+      }
+    }
+
+    &__btn {
+      align-self: center;
+    }
+  }
+}
+
+.hero {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__bg-image {
+    min-height: 20rem;
+    background-image: url("./assets/illustration-working.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50px;
+  }
+
+  &__header {
+  }
+
+  &__btn {
+  }
+}
+
+/* #menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+} */

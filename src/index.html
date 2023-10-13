@@ -17,24 +17,27 @@
       <svg class="header__logo">
         <use xlink:href="./../src/assets/logo.svg#logo">
       </svg> 
-        <nav class="header__menu">
+      <div class="header__hamburger" data-menu-toggle>
+        <span class="header__hamburger__bar"></span>
+      </div>
+        <nav class="header__menu" data-menu>
           <ul>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#" class="header__menu__item">Features</a></li>
+            <li><a href="#" class="header__menu__item">Pricing</a></li>
+            <li><a href="#" class="header__menu__item">Resources</a></li>
+            <li><a href="#" class="header__menu__item header__menu__item--separated">Login</a></li>
           </ul>
-          <button class="btn btn--light btn--sm btn--rounded">Sign Up</button>
+          <button class="header__menu__btn btn btn--light btn--sm btn--rounded">Sign Up</button>
         </nav>
       </div>
       </header>
       <main>
-        <section>
-          <div>
-            <div></div>
-            <h1>More than just shorter links</h1>
+        <section class="hero">
+          <div class="hero__wrapper">
+            <div class="hero__bg-image"></div>
+            <h1 class="hero__header">More than just shorter links</h1>
             <p>Build your brand's recognition and detailed insights on how your links are performing.</p>
-            <button  class="btn btn--light btn--sm btn--rounded">Get Started</button>
+            <button  class="hero__btn btn btn--light btn--sm btn--rounded">Get Started</button>
           </div>
           </section>
 

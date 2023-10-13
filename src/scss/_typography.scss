@@ -1,20 +1,28 @@
 //HEADERS
-h1, h2, h3, h4 {
-    color: $neutral-clr-darker;
+h1,
+h2,
+h3,
+h4 {
+  color: $neutral-clr-darker;
+}
+
+a,
+p {
+  color: $neutral-clr-light;
 }
 
 h1 {
-    font-size: 2rem;
+  font-size: clamp(1.3rem, 0.75rem + 2vw, 2rem);
 }
 
 h2 {
-
+  font-size: clamp(1.15rem, 0.75rem + 2vw, 1.75rem);
 }
 
 h3 {
-
+  font-size: clamp(1.15rem, 0.75rem + 1vw, 1.35rem);
 }
 
 h4 {
-
+  font-size: clamp(1.05rem, 0.75rem + 1vw, 1.25rem);
 }
