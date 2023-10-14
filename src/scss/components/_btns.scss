@@ -6,6 +6,8 @@
   outline: 0;
   border-radius: 5px;
   text-align: center;
+  font-size: $primary-fs;
+  font-weight: $font-bolder;
   color: #fff;
   transition: background-color 250ms ease-out;
   cursor: pointer;
@@ -15,7 +17,7 @@
   }
 
   &--rounded {
-    border-radius: 20px;
+    border-radius: 25px;
   }
 
   &--light {

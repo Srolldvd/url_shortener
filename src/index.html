@@ -31,7 +31,7 @@
         </nav>
       </div>
       </header>
-      <main>
+      <main id="container">
         <section class="hero">
           <div class="hero__wrapper">
             <div class="hero__bg-image"></div>
@@ -41,76 +41,84 @@
           </div>
           </section>
 
-        <section>
-          <form>
-            <label for="">
-              <input type="text" placeholder="Shorten a link here...">
+        <section class="url-shortener">
+          <div class="url-shortener__wrapper">
+          <form class="url-shortener__form">
+            <label for="" class="url-shortener__label">
+              <input type="text" class="url-shortener__inp" placeholder="Shorten a link here...">
             </label>
-            <button type="submit" class="btn btn--light">Shorten It!</button>
+            <button type="submit" class="url-shortener__btn btn btn--light">Shorten It!</button>
           </form>
+        </div>
         </section>
 
-        <section>
-          <div>
-          <div>
+        <section></section>   <!-- Wrapper pro výpis zkrácených URL -->
+
+        <section class="cards">
+          <div class="cards__wrapper">
+          <div class="cards__header-section">
             <h2>Advanced Statistics</h2>
             <p>Track how your links are perfoming across the web with our advanced statistics dashboard.</p>
          </div>
 
-          <div>
-            <svg>
-              <use xlink:href="./../src/assets/icon-brand-recognition.svg#icon-brand-recognition">
-            </svg>
-            <h4>Brand Recognition</h4>
+          <div class="card">
+            <div class="card__img card__img--brand">
+          </div>
+            <h4 class="card__header">Brand Recognition</h4>
             <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
           </div>
 
-          <div>
-            <svg>
-              <use xlink:href="./../src/assets/icon-detailed-records.svg#icon-detailed-records">
-            </svg>
-            <h4>Detailed Records</h4>
+          <div class="card">
+            <div class="card__img card__img--records">
+          </div>
+            <h4 class="card__header">Detailed Records</h4>
             <p>Gain insights into who is clicking your links. Knowing when and where people engage with you content helps inform better decisions</p>
           </div>
 
-          <div>
-            <svg>
-              <use xlink:href="./../src/assets/icon-fully-customizable.svg#icon-fully-customizable">
-            </svg>
-            <h4>Fully Customizable</h4>
+          <div class="card">
+            <div class="card__img card__img--customizable">
+          </div>
+            <h4 class="card__header">Fully Customizable</h4>
             <p>Improve brand awereness and content discoverability trough customizable links, supercharging audience engagement.</p>
           </div>
         </div>
         </section>
 
-        <section></section>             <!-- Wrapper pro výpis zkrácených URL -->
-
-        <section>
-          <h2>Boost your links today</h2>
+        <section class="links-boost">
+          <div class="links-boost__wrapper">
+          <h2 class="links-boost__header">Boost your links today</h2>
           <button class="btn btn--light btn--sm btn--rounded">Get Started</button>
+        </div>
         </section>
       </main>
-      <footer>
-        <section>
-          <div>
-            <a href="#">Features</a>
-            <ul>
+
+      <footer class="footer">
+        <section class="footer__wrapper">
+          <svg class="footer__logo">
+            <use xlink:href="./../src/assets/logo.svg#logo">
+          </svg> 
+
+          <div class="footer__list-wrapper">
+            <a href="#" class="footer__list-label">Features</a>
+            <ul class="footer__list">
               <li>Link Shortening</li>
               <li>Branded Links</li>
               <li>Analytics</li>
             </ul>
         </div>
-          <div>
-            <a href="#">Resources</a>
-            <ul> 
+
+          <div class="footer__list-wrapper">
+            <a href="#" class="footer__list-label">Resources</a>
+            <ul class="footer__list"> 
               <li>Blog</li>
               <li>Developers</li>
               <li>Support</li>
             </ul>
         </div>
-          <div>
-            <a href="#">Company</a>
-            <ul>
+
+          <div class="footer__list-wrapper">
+            <a href="#" class="footer__list-label">Company</a>
+            <ul class="footer__list">
               <li>About</li>
               <li>Our Team</li>
               <li>Careers</li>
@@ -118,13 +126,12 @@
             </ul>
         </div>
         </section>
-        <section>
-          <div>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-          </div>
+
+        <section class="footer__social-media">
+            <a href="#" class="footer__social-media__link footer__social-media__link--facebook"></a>
+            <a href="#" class="footer__social-media__link footer__social-media__link--twitter"></a>
+            <a href="#" class="footer__social-media__link footer__social-media__link--pinterest"></a>
+            <a href="#" class="footer__social-media__link footer__social-media__link--instagram"></a>
         </section>
       </footer>
     <script src="./index.mjs" type="module"></script>
